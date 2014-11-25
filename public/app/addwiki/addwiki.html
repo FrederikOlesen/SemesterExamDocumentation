@@ -1,0 +1,41 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<p> I HATE YOU </p>
+<p> I HATE YOU </p>
+
+
+<div class="jumbotron">
+    <div class="panel-body">
+        <h3><span class="label label-default">Hi and welcome to the add article to database</span></h3> <br>
+        There will be a automatic preview of what you put in the database, enjoy!
+    </div>
+
+    <div ng-controller="addwikiCtrl">
+
+
+        <!--<ul>-->
+        <!--<li  ng-repeat="x in articles"> Title: {{x.title}} URL: {{x.url}}Abstract: {{x.abstract}}Categories: {{x.categories}} </li>-->
+        <!--</ul>-->
+
+
+        <h3><span class="label label-success">Title</span></h3> <br>
+        {{data}}
+        <h3><span class="label label-success">URL</span></h3> <br>
+        {{data1}}
+        <h3><span class="label label-success">Abstract</span></h3> <br>
+        {{data2}}
+        <h3><span class="label label-success">Categories</span></h3> <br>
+        {{data3}}
+        <input type="text" ng-model="data" class="form-control" placeholder="Title"><br>
+        <input type="text" ng-model="data1" class="form-control" placeholder="Url"><br>
+        <input type="text" ng-model="data2" class="form-control" placeholder="Abstract"><br>
+        <input type="text" ng-model="data3" class="form-control" placeholder="Categories"><br>
+        <button ng-click="save()">Submit Article</button>
+
+
